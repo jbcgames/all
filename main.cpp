@@ -7,9 +7,10 @@ int main()
     double a;
     double b;
     int ing;
-    cout<<"Ingrese la operacion a realizar"<<endl<<"Suma-1"<<endl<<"Resta-2"<<endl<<"multiplicacion-3"<<endl<<"division-4"<<endl;
-    cin>>ing;
-    ;
+
+    while(true){
+        cout<<"Ingrese la operacion a realizar"<<endl<<"Suma-1"<<endl<<"Resta-2"<<endl<<"multiplicacion-3"<<endl<<"division-4"<<endl;
+        cin>>ing;
     switch (ing) {
     case 1:
         cout<<"Numero 1"<<endl;
@@ -40,7 +41,10 @@ int main()
         cout << "La division de los dos numeros es: " <<division(a,b)<< endl;
         return 0;
     default:
+        system("cls");
         cout<<"esta opcion no es valida"<<endl;
+
+    }
     }
     return 0;
 
